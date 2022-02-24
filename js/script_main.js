@@ -12,9 +12,9 @@ $(function(){
                 $('.count2').counterUp({delay: 10,time: 550});
             }
             if(index >= 8) {
-                document.querySelector('header').style.background = 'rgba(0, 0, 0,0.95)'
+                $('header').css({'background':'rgba(0, 0, 0,0.95)'});
             } else {
-                document.querySelector('header').style.background = 'none'
+                $('header').css({'background':'none'});
             }
         },
     });
