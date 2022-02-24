@@ -4,14 +4,19 @@ $(function(){
         fingersonly: true,
         anchors:['firstPage','secondPage','thirdPage','fourthPage','fifthPage','sixthPage','seventhPage'],
         menu:'.rightNav',
-        afterLoad: function(anchorLink, index){
+        afterLoad: function(anchorLink, index) {
             if(index == 2){
                 $('.count').counterUp({delay: 10,time: 550});
                 }
             if(index == 3){
                 $('.count2').counterUp({delay: 10,time: 550});
             }
-        }
+            if(index >= 8) {
+                document.querySelector('header').style.background = 'rgba(0, 0, 0,0.95)'
+            } else {
+                document.querySelector('header').style.background = 'none'
+            }
+        },
     });
 });
 
