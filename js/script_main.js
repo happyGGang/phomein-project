@@ -1,4 +1,4 @@
-//1.풀페이지 스크롤
+//풀페이지
 $(function(){
     $('#fullpage').fullpage({
         fingersonly: true,
@@ -20,7 +20,7 @@ $(function(){
     
     
     
-//2.GNB
+//GNB
 $(function(){
     setGnb();
     function setGnb(){
@@ -37,7 +37,7 @@ $(function(){
     }
 });
 
-//3.이미지슬라이드
+//이미지슬라이드
 $(function(){
     $('.visual').slick({
         arrows: false,
@@ -54,17 +54,17 @@ $(function(){
     });
 });
 
-//4.이미지슬라이드- 넓이 높이 스크립트
+//4.이미지슬라이드 width height
 
 $(function(){
     var winW = $(window).width();
     var winH = $(window).height();
-         list = $('.visual .list');
+        list = $('.visual .list');
     list.css({width: winW+ 'px', height:winH+ 'px'});
 });
 
 
- 
+
 
 
 

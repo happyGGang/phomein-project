@@ -10,6 +10,7 @@ a {color: inherit; text-decoration: inherit;}
 a img {border: none;}
 img {vertical-align: middle; max-width: 100%;}
 li {list-style: none;}
+::selection { background-color: #96cc29; color: #FFFFFF; }
 
 /*layout*/
 .wrap {position: relative;  font-family: 'Noto Sans KR', sans-serif; letter-spacing: -1px;}
@@ -20,23 +21,23 @@ li {list-style: none;}
 #section2 {background-image: url(../img/main_visual_02.jpg);}
 #section3 {background-image: url(../img/main_visual_03.jpg);}
 #section4 {background-image: url(../img/main_visual_04.jpg);}
-#section5 {background-image: url(../img/main_visual_05.jpg);}
+#section5 {background-image: url(../img/main_visual_05_new.jpg);}
 #section6 {background-image: url(../img/main_visual_06.jpeg);}
 #section7 {background-image: url(../img/main_visual_07.jpg);}
 
 /*header*/
 header {position: fixed; width: 100%; top:0; left: 0;z-index: 9999; border-bottom: 1px solid rgba(255,255,255,0.1);}
 .innerHeader {width: 1300px; background: none; margin: 0 auto; padding: 0 40px; box-sizing:border-box; height: 80px; overflow: hidden;transition: all 0.5s;}
-.innerHeader.on {height: 300px; background: #000; transition: all 0.5s;}
+.innerHeader.on {height: 360px; background: #000; transition: all 0.5s;}
 .innerHeader .logo {float: left;line-height: 80px;}
-.innerHeader .gnb {float: left; margin-left: 200px;}
+.innerHeader .gnb {float: left; margin-left: 90px;}
 .innerHeader .gnb > li {float: left; width: 150px; position: relative;}
-.innerHeader .gnb > li > a {display: block; text-align: center; font-size: 17px;color:#fff; text-transform: uppercase;letter-spacing: 1px; line-height: 80px;}
+.innerHeader .gnb > li > a {display: block; text-align: center; font-size: 17px;color:#fff; letter-spacing: 1px; line-height: 80px;}
 .innerHeader .gnb > li > .inner {position: absolute; width: 100%; left: 0; top:90px; display: none;}
 .innerHeader .gnb > li > .inner.on {display: block;}
 .innerHeader .gnb > li > .inner li a {display: block; width: 100%; height: 100%;text-align: center;font-size: 14px; line-height: 3; color:#999;}
 .innerHeader .gnb > li > .inner li a:hover, .innerHeader .gnb > li > .inner li a:focus {color:#fff; transition: all 0.3s;}  
-.innerHeader .franchise {float: right; font-size: 15px; color:#507219; background: #fff;width: 130px; height: 44px;border-radius: 30px;text-align: center; line-height: 44px;margin-top: 20px;}
+.innerHeader .franchise {float: right; font-size: 15px; color:#FFFFFF; border: 1px solid #FFFFFF; width: 90px; height: 33px;border-radius: 30px;text-align: center; line-height: 33px;margin-top: 20px;}
 
 
 
@@ -55,7 +56,7 @@ header {position: fixed; width: 100%; top:0; left: 0;z-index: 9999; border-botto
 .footer {background: #ddd; height: 400px;}
 
 /*section1*/
-.visual {width: 100%; height: 100vh;}
+.visual {width: 100%; height: 100%}
 .visual .list {width: 100%; height: 100%; position: relative; background-repeat: no-repeat; background-size: cover; background-position: center;}
 .visual .list .textBox {position: absolute; top: 32%; left: 0; width: 100%; text-align: center;}
 .visual .list .textBox:after {content: ''; display: block; position: absolute; top:-80px; left: 50%; margin-left: -1px; width: 1px; height: 60px; background-color: #84a315;}
@@ -81,7 +82,7 @@ header {position: fixed; width: 100%; top:0; left: 0;z-index: 9999; border-botto
 /*section2*/
 #section2 {position: relative; height: 100%;}
 #section2 .inner {width: 900px; position: absolute;  top:50%;left: 50%; transform: translate(-50%,-50%);}
-#section2 .inner .label {width: 140px; padding: 10px 0;  color:#fff; font-size: 17px; background: #000; text-align: center; opacity: 0; transform: translate(30px, 0px); transition: all 1.2s ease;}
+#section2 .inner .label {width: 140px; padding: 15px 0;  color:#fff; font-size: 17px; background: #000; text-align: center; opacity: 0; transform: translate(30px, 0px); transition: all 1.2s ease;}
 #section2 .inner .tit {float: left;  margin-top: 35px;color:#fff; font-size: 40px; line-height: 1.2; letter-spacing: -1px;opacity: 0; transform: translate(30px, 0px); transition: all 1.2s ease; }
 #section2 .inner .countBox {float: right;  margin-top: 25px; width: 400px; }
 #section2 .inner .countBox .count {color:#fff; font-size: 75px; font-family: 'roboto'; letter-spacing: 3px;}
@@ -99,16 +100,16 @@ header {position: fixed; width: 100%; top:0; left: 0;z-index: 9999; border-botto
 #section3 .inner .topBox .tit span{display: block; font-weight: 500;}
 #section3 .inner .topBox .btn {display: block; background: #fff; width: 200px; margin: 25px auto; height: 55px; line-height: 55px; color:#333; font-size: 17px; font-weight: 500; text-align: center;}
 #section3 .inner .topBox .txt {font-size: 14px; color:#fff; opacity: 0.5;}
-#section3 .inner .bottomBox {position: absolute; bottom: 0; left: 0; width: 100%;text-align: center; background-color: rgba(0,0,0,0.3); transform: translate(0px,100px); transition: all 0.2s ease; opacity: 0;}
-#section3 .inner .bottomBox ul {width: 900px;  margin: 0 auto; display: flex; justify-content: space-between; padding: 90px 0;}
-#section3 .inner .bottomBox ul li{ text-align: center;border-left: 1px solid rgba(255,255,255,0.2);box-sizing: border-box; width: 33.3333%;}
-#section3 .inner .bottomBox ul li:first-child {border-left: none;}
-#section3 .inner .bottomBox ul li .img {margin-bottom: 20px;}
-#section3 .inner .bottomBox ul li .data {color:#fff; font-weight: bold;}
-#section3 .inner .bottomBox ul li .data span {font-size: 80px; font-family: 'roboto';}
-#section3 .inner .bottomBox ul li .data strong {font-size: 35px;}
-#section3 .inner .bottomBox ul li .txt {color: #fff; font-size: 16px; opacity: 0.7;}
-#section3 .inner .bottomBox ul li .txt span {display: block; font-size: 13px;}
+#section3 .inner .bottomBox {position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; background-color: rgba(0,0,0,0.3); transform: translate(0px,100px); transition: all 0.2s ease; opacity: 0;}
+#section3 .inner .bottomBox .inner {width: 900px;  margin: 0 auto; padding: 90px 0;}
+#section3 .inner .bottomBox .inner .since{ text-align: center;border-left: 1px solid rgba(255,255,255,0.2);box-sizing: border-box;}
+#section3 .inner .bottomBox .inner .since:first-child {border-left: none;}
+#section3 .inner .bottomBox .inner .since .img {margin-bottom: 20px;}
+#section3 .inner .bottomBox .inner .since .data {color:#fff; font-weight: bold;}
+#section3 .inner .bottomBox .inner .since .data span {font-size: 80px; font-family: 'roboto';}
+#section3 .inner .bottomBox .inner .since .data strong {font-size: 35px;}
+#section3 .inner .bottomBox .inner .since .txt {color: #fff; font-size: 16px; opacity: 0.7;}
+#section3 .inner .bottomBox .inner .since .txt span {display: block; font-size: 13px;}
 
 /*section3 motion*/
 #section3.active .inner .topBox  {transform: translate(-50%,0);opacity: 1; transition-delay: 0.2s; transition: all 1.2s ease-in-out;}
@@ -153,9 +154,9 @@ header {position: fixed; width: 100%; top:0; left: 0;z-index: 9999; border-botto
 #section5 {position: relative; height: 100%;}
 #section5 .inner {width: 900px; position: absolute; top: 50%;left: 50%; transform: translate(-50%,-50%); text-align: center;}
 #section5 .inner .topBox {opacity: 1; transform: translate(0px,-100px); transition: all 1.2s ease;}
-#section5 .inner .topBox .tit {font-size: 65px;color:#fff;line-height: 1.2; font-weight: 300;margin-bottom: 25px;}
+#section5 .inner .topBox .tit {font-size: 65px;color:#FFFFFF;line-height: 1.2; font-weight: 300;margin-bottom: 25px;}
 #section5 .inner .topBox .tit span{display: block; font-weight: 500;}
-#section5 .inner .topBox .txt {color:#fff; font-size: 17px; line-height: 1.4; letter-spacing: -1px;opacity: 0.8;}
+#section5 .inner .topBox .txt {color:#FFFFFF; font-size: 17px; line-height: 1.4; letter-spacing: -1px;opacity: 0.8;}
 #section5 .inner .bottomBox {opacity: 0; transform: translate(0px,100px); transition: all 1.2s ease;margin-top:50px;}
 
 /*section5 motion*/
@@ -165,21 +166,28 @@ header {position: fixed; width: 100%; top:0; left: 0;z-index: 9999; border-botto
 #section6 {position: relative; height: 100%;}
 #section6 .inner {width: 1100px; position: absolute; top: 50%;left: 50%; transform: translate(-50%,-50%); text-align: center;}
 #section6 .inner .topBox {opacity: 0; transform: translate(0px,-100px); transition: all 1.2s ease;}
-#section6 .inner .topBox .tit {margin-bottom: 25px; color:#fff;font-size: 65px; line-height: 1.2; font-weight: 300;}
+#section6 .inner .topBox .tit {margin-bottom: 25px; color:#FFFFFF;font-size: 65px; line-height: 1.2; font-weight: 300;}
 #section6 .inner .topBox .tit span {display: block; font-weight: 500 ;}
 
 #section6 .inner .bottomBox .snsList {display: flex;justify-content: space-between;flex-wrap: wrap;margin:30px 0;}
 #section6 .inner .bottomBox .snsList li {width: 23.5%;margin:0.6%;}
 #section6 .inner .bottomBox .snsList li a {display: block; width: 100%;height: 100%; position: relative;}
-#section6 .inner .bottomBox .snsList li a:before {background: url('../img/Instagram_bg.png')no-repeat center/cover; content: ''; width: 100%;height: 100%;position: absolute; top:0; left: 0; opacity: 0; transition: all 0.3s;}
-#section6 .inner .bottomBox .snsList li a:after {content: '❤ 295'; color:#fff; position: absolute; left: 50%; top:50%; transform: translate(-50%,-50%); font-size: 20px;opacity: 0;}
-#section6 .inner .bottomBox .snsList li:nth-child(2) a:after {content: '❤ 188';}
-#section6 .inner .bottomBox .snsList li:nth-child(3) a:after {content: '❤ 543';}
-#section6 .inner .bottomBox .snsList li:nth-child(4) a:after {content: '❤ 325';}
-#section6 .inner .bottomBox .snsList li:nth-child(5) a:after {content: '❤ 164';}
-#section6 .inner .bottomBox .snsList li:nth-child(6) a:after {content: '❤ 245';}
-#section6 .inner .bottomBox .snsList li:nth-child(7) a:after {content: '❤ 256';}
-#section6 .inner .bottomBox .snsList li:nth-child(8) a:after {content: '❤ 110';}
+#section6 .inner .bottomBox .snsList li:first-child a:before {background: url('../img/Instagram_bg.png')no-repeat center/cover; content: ''; width: 100%;height: 100%;position: absolute; top:0; left: 0; opacity: 0; transition: all 0.3s;}
+#section6 .inner .bottomBox .snsList li:nth-child(2)  a:before {background: url('../img/Instagram_bg.png')no-repeat center/cover; content: ''; width: 100%;height: 100%;position: absolute; top:0; left: 0; opacity: 0; transition: all 0.3s;}
+#section6 .inner .bottomBox .snsList li:nth-child(3) a:before {background-color: rgba(60, 166, 60, 0.9); content: ''; width: 100%;height: 100%;position: absolute; top:0; left: 0; opacity: 0; transition: all 0.3s;}
+#section6 .inner .bottomBox .snsList li:nth-child(4) a:before {background: url('../img/Instagram_bg.png')no-repeat center/cover; content: ''; width: 100%;height: 100%;position: absolute; top:0; left: 0; opacity: 0; transition: all 0.3s;}
+#section6 .inner .bottomBox .snsList li:nth-child(5) a:before {background-color: rgba(60, 166, 60, 0.9); content: ''; width: 100%;height: 100%;position: absolute; top:0; left: 0; opacity: 0; transition: all 0.3s;}
+#section6 .inner .bottomBox .snsList li:nth-child(6) a:before {background: url('../img/Instagram_bg.png')no-repeat center/cover; content: ''; width: 100%;height: 100%;position: absolute; top:0; left: 0; opacity: 0; transition: all 0.3s;}
+#section6 .inner .bottomBox .snsList li:nth-child(7) a:before {background: url('../img/Instagram_bg.png')no-repeat center/cover; content: ''; width: 100%;height: 100%;position: absolute; top:0; left: 0; opacity: 0; transition: all 0.3s;}
+#section6 .inner .bottomBox .snsList li:nth-child(8) a:before {background-color: rgba(60, 166, 60, 0.9); content: ''; width: 100%;height: 100%;position: absolute; top:0; left: 0; opacity: 0; transition: all 0.3s;}
+#section6 .inner .bottomBox .snsList li a:after {content: '배고플때 포메인레드 베트남 고플떄도 포메인 레드'; color:#FFFFFF; position: absolute; left: 50%; top:50%; transform: translate(-50%,-50%); font-size: 17px; opacity: 0;}
+#section6 .inner .bottomBox .snsList li:nth-child(2) a:after {content: '#아직 안 먹어 봤어? 포메인 쌀국수만큼 맛있는 스페셜 메뉴 3종 #포메인';}
+#section6 .inner .bottomBox .snsList li:nth-child(3) a:after {content: '답답한 요즘, #추천메뉴 맑고 개운한 해산물 쌀국수';}
+#section6 .inner .bottomBox .snsList li:nth-child(4) a:after {content: '#볶음면 좋아한다면 꼭 먹어봐야 하는 메뉴 2종 #포메안';}
+#section6 .inner .bottomBox .snsList li:nth-child(5) a:after {content: '살짝 얼큰한데 너~무 맛있어서 멈출 수 없는 이맛!';}
+#section6 .inner .bottomBox .snsList li:nth-child(6) a:after {content: '명불허전! 스트레스엔? 깔끔하게 매운맛이 최고!';}
+#section6 .inner .bottomBox .snsList li:nth-child(7) a:after {content: '파주 쌀국수 맛집 포메인 파주문산점 리뷰 #햅쌀면';}
+#section6 .inner .bottomBox .snsList li:nth-child(8) a:after {content: '베트남 비빔국수 #분보싸오';}
 #section6 .inner .bottomBox .snsList li a:hover:before {opacity: 1; transition: all 0.5s;}
 #section6 .inner .bottomBox .snsList li a:hover:after {opacity: 1; transition: all 0.5s;}
 
@@ -191,38 +199,40 @@ header {position: fixed; width: 100%; top:0; left: 0;z-index: 9999; border-botto
 
 /*section7*/
 #section7 {position: relative;}
-#section7 .topBox {position: absolute; top: 25%;left: 0; width: 100%;}
+#section7 .topBox {position: absolute; top: 15%;left: 0; width: 100%;}
 #section7 .topBox:after {content: ''; display: block; position: absolute; top:0; left: 50%;width: 1px;height: 100%; background: rgba(255,255,255,0.1);}
 
 /*공통요소label*/
-#section7 .label {display: inline-block; background: rgba(0,0,0,0.1);padding: 8px 15px; box-sizing: border-box; font-size: 16px; color:#fff; border:1px solid rgba(255,255,255,0.1);margin-bottom: 40px;}
+#section7 .label {display: inline-block; background: rgba(0,0,0,0.1);padding: 8px 15px; box-sizing: border-box; font-size: 16px; color:#FFFFFF; border:1px solid rgba(255,255,255,0.1);margin-bottom: 40px;}
 
-#section7 .topBox .news {width: 1100px; margin:0 auto;  overflow: hidden;}
-#section7 .topBox .news li:first-child {float: left;width: 50%;position: relative;padding-bottom: 50px;}
-#section7 .topBox .news li:first-child a {color:rgb(255,255,255,1); font-size: 35px; line-height: 1.3;}
+#section7 .topBox .news {width: 1100px; margin: 0 auto;  overflow: hidden; }
+#section7 .topBox .news li:first-child {float: left; width: 50%;position: relative;padding-bottom: 100px;  }
+#section7 .topBox .news li:first-child a {color:rgb(255,255,255,1); font-size: 35px; line-height: 1.3; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 #section7 .topBox .news li:first-child a span {position: absolute; bottom: 0; left: 0;font-size: 14px;opacity: 0.5;}
-#section7 .topBox .news li{float: right;width: 50%; padding-left: 54px; box-sizing: border-box;}
-#section7 .topBox .news li a {display: block; color:rgba(255,255,255,0.6); font-size: 14px; line-height: 32px;}
-#section7 .topBox .news li a span {display: inline-block; margin-right: 20px; font-family: 'roboto'; letter-spacing: 1px;}
+#section7 .topBox .news li{float: right;width: 50%; padding-left: 5px; box-sizing: border-box; }
+#section7 .topBox .news li a {display: block; color: rgba(255, 255, 255, 0.5); font-size: 14px; line-height: 32px;}
+#section7 .topBox .news .news--right a { margin-left: 50px; }
+#section7 .topBox .news li a span {display: inline-block; margin-right: 20px; font-family: 'roboto'; letter-spacing: 1px; }
 #section7 .bottomBox {position: absolute; bottom: 0; left: 0; width: 100%;  z-index: 1; padding: 100px 0;}
 #section7 .bottomBox:before {content: ''; width: 50%;height: 100%; position: absolute; left: 0; top:0; background: url(../img/@img_main_event.jpeg)no-repeat center/cover; z-index: -1;}
 #section7 .bottomBox:after {content: ''; width: 50%;height: 100%; position: absolute; right: 0; top:0; background: url(../img/main_franchisee.jpeg)no-repeat center/cover; z-index: -1;}
 #section7 .bottomBox ul {display: flex; justify-content: space-between; width: 1100px;margin: 0 auto;}
 #section7 .bottomBox ul li {display: block; width: 50%;}
-#section7 .bottomBox ul li a {display: block; width: 100%; height: 100%;color: #fff;}
+#section7 .bottomBox ul li a {display: block; width: 100%; height: 100%;color: #FFFFFF;}
 #section7 .bottomBox ul li:nth-child(2) a {padding-left: 54px; box-sizing: border-box;}
 #section7 .bottomBox ul li a .tit {font-size: 34px; line-height: 1.4;}
-#section7 .bottomBox ul li a .txt {font-size: 15px; color:#fff; margin-top: 25px; opacity: 0.7; left: -1px;}
+#section7 .bottomBox ul li a .txt {font-size: 15px; color:#FFFFFF; margin-top: 25px; opacity: 0.7; left: -1px;}
+#section7 .bottomBox ul li a .txt span {border: 1px solid #FFFFFF; color: #000000; background-color: #FFFFFF; padding: 0 12px; margin-right: 10px; }
 
 /*footer*/
-.footer {background: #fff; height:auto;}
+.footer {background: #FFFFFF; height: 250px;}
 .footer .topBox {border-bottom: 1px solid #ddd; height: 55px; line-height: 55px;}
 .footer .topBox ul {width: 1100px; margin: 0 auto;overflow: hidden;}
-.footer .topBox ul li {float: left; width: 16.6666%;}
-.footer .topBox ul li a {display: block; width: 100%; height: 100%; text-align:center; font-size: 14px; color:#444;}
+.footer .topBox ul li {float: left; margin-left: 120px;}
+.footer .topBox ul li a {display: block; width: 100%; height: 100%; text-align:center; font-size: 14px; color:#444444;}
 .footer .bottomBox {width: 1100px; margin: 0 auto;overflow: hidden; padding: 40px 0;}
 .footer .bottomBox h2 {float: left;}
-.footer .bottomBox .add {float: left; margin-left: 50px; font-size: 14px; color:#888; letter-spacing: -1px;}
+.footer .bottomBox .add {float: left; margin-left: 50px; font-size: 14px; color:#888888; letter-spacing: -1px;}
 .footer .bottomBox .add li {line-height: 1.6;}
 .footer .bottomBox .add li:last-child {font-size: 12px; margin-top: 20px;}
 
